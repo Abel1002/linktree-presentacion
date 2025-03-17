@@ -27,7 +27,7 @@ const HomePage = () => {
             transition={{ type: "tween", ease: "easeInOut", duration: 1 }}
           >
             <Image
-              src="public/fotoperfil.jpg"
+              src="/fotoperfil.jpg"
               alt="Abel Perez"
               borderRadius="full"
               boxSize="150px"
@@ -95,7 +95,7 @@ const HomePage = () => {
           _hover={{ boxShadow: "0 0 25px rgba(5, 127, 192, 1)" }}
         >
           <Image
-            src="public/fotopresentacion.png"
+            src="/fotopresentacion.png"
             alt="Preview de la presentación"
             borderRadius="10px"
             w="100%"
