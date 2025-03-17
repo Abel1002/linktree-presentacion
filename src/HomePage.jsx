@@ -14,13 +14,13 @@ const HomePage = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        height="90vh"
+        height="100%"
         bg="#11132c"
         color="white"
         flexDirection="column"
         gap={6}
       >
-        <VStack spacing={6} textAlign="center">
+        <VStack spacing={6} textAlign="center" mt="100px">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
