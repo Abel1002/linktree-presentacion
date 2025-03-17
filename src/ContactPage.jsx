@@ -38,19 +38,39 @@ const ContactPage = () => {
         
         <Text fontSize="md" color="#008cd5">
           Hola, soy Abel y actualmente estoy trabajando como Desarrollador de aplicaciones especializadas para la gestión empresarial en entornos Azure y Dynamics 365. Ahora mismo, me encuentro trabajando en una app multiplataforma (Windows, Android, iOS y Mac) con la tecnología de Microsoft MAUI Blazor en un entorno .NET 9.0.
-          <br /><br />
+          <br />
           Además, estoy prosiguiendo mi formación en IES Stucom Pelai, cursando un Máster en Inteligencia Artificial y Big Data.
+          <br /><br /><br />
+          Si tienes alguna duda puedes ponerte en contacto conmigo:
         </Text>
 
         <HStack spacing={6}>
-          <Link href="mailto:abelpr1002@gmail.com?subject=Contacto%20por%20charla%20de%20IA&body=Hola,%20soy%20(tu%20nombre)%20de%20Stucom,%20vi%20tu%20charla%20sobre%20inteligencia%20artificial%20en%20el%20Talent%20y%20me%20pongo%20en%20contacto%20contigo%20para:" target="_blank" rel="noopener noreferrer">
-            <Image src="/correo.png" alt="Correo" boxSize="40px" />
+          <Link 
+            href="mailto:abelpr1002@gmail.com?subject=Contacto%20por%20charla%20de%20IA&body=Hola,%20soy%20(tu%20nombre)%20de%20Stucom,%20vi%20tu%20charla%20sobre%20inteligencia%20artificial%20en%20el%20Talent%20y%20me%20pongo%20en%20contacto%20contigo%20para:" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            _hover={{ textDecoration: "none" }}
+          >
+            <HStack spacing={2}>
+              <Image src="/correo.png" alt="Correo" boxSize="40px" />
+              <Text textDecoration="underline">abelpr1002@gmail.com</Text>
+            </HStack>
           </Link>
-          
-          <Link href="https://www.linkedin.com/in/abel-p-7430a5255/" target="_blank" rel="noopener noreferrer">
-            <Image src="/linkedin.png" alt="LinkedIn" boxSize="40px" />
+
+          <Link 
+            href="https://www.linkedin.com/in/abel-p-7430a5255/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            _hover={{ textDecoration: "none" }}
+          >
+            <HStack spacing={2}>
+              <Image src="/linkedin.png" alt="LinkedIn" boxSize="40px" />
+              <Text textDecoration="underline">Perfil de LinkedIn</Text>
+            </HStack>
           </Link>
         </HStack>
+
+
       </VStack>
     </Box>
     </Layout>
