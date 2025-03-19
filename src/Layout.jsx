@@ -2,6 +2,7 @@ import { Box, HStack, Link, Text, IconButton, Drawer, DrawerBody, DrawerCloseBut
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { AiFillHome, AiOutlineMail, AiFillFileText, AiOutlineMenu } from "react-icons/ai";
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react"
 
 const NavItem = ({ icon, children, to, isMobile = false }) => {
   const location = useLocation();
@@ -27,6 +28,7 @@ const NavItem = ({ icon, children, to, isMobile = false }) => {
         {icon}
         <Text fontWeight={isActive ? "bold" : "medium"}>
           {children}
+          <Analytics />
         </Text>
       </HStack>
       
